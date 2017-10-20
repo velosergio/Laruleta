@@ -241,6 +241,7 @@
                             })}
                  function alerta_Mte(){
                      swal({
+                         
                     title: '<i><font color="#FF6528"><h2><strong>¡Manejo de tensiones y estrés!</strong></h2></i></font>',
                             imageUrl: 'src/img/alert.png',
                             imageWidth: 221,
@@ -249,30 +250,30 @@
                             width: '100%',
                             padding: 35,
                             html:
-                            ' <h4><p align="justify"><br />Consiste en la identificación oportuna de las fuentes de tensiones y estrés en la vida cotidiana y sus diferentes manifestaciones fin de encontrar las condiciones para eliminarlas o contrarrestarlas de manera saludable.<br /> ' + 
-                            '<br /><b>ACTIVIDAD:</b>Camila está pasando por una situación difícil en su trabajo ya que     le están asignando tareas que no le corresponden y esto no permite que esta chica tenga espacios libres de relajación con ella y sus seres queridos, esto está generando mucho estrés en ella.<br /><br /><b>¿Qué le aconsejan a Camila para evitar o contrarrestar esta situación estresante?</b><br /><br /><b>a.</b>	Que exprese sus sentimientos hacia sus superiores y si algo la está molestando lo manifieste de manera abierta y respetuosa.<br /><br /><b>b.</b>	Ser más asertivo, que no pase a un segundo plano  su propia vida, lidiar  los problemas de frente, para prevenir este sentimiento.<br /><br /><b>c.</b>	Renunciar y tirar todo a la borda.<p></h4>',
+                            '<p align="justify"><br />Consiste en la identificación oportuna de las fuentes de tensiones y estrés en la vida cotidiana y sus diferentes manifestaciones fin de encontrar las condiciones para eliminarlas o contrarrestarlas de manera saludable.<br /></p>'+'<br /><h5>ACTIVIDAD:</h5>'+'<p align="justify"> Camila está pasando por una situación difícil en su trabajo ya que le están asignando tareas que no le corresponden y esto no permite que esta chica tenga espacios libres de relajación con ella y sus seres queridos, esto está generando mucho estrés en ella.<br /><br /></p>'+'<b>¿Qué le aconsejan a Camila para evitar o contrarrestar esta situación estresante?</b><br /><br />'+'<p align="justify"><b>a.</b>	Que exprese sus sentimientos hacia sus superiores y si algo la está molestando lo manifieste de manera abierta y respetuosa.<br /><br /><b>b.</b>	Ser más asertivo, que no pase a un segundo plano  su propia vida, lidiar  los problemas de frente, para prevenir este sentimiento.<br /><br /><b>c.</b>	Renunciar y tirar todo a la borda.<p></p>',
                             showCloseButton: true,
                             focusConfirm: false,
                             confirmButtonText:
                             '<i class="fa fa-thumbs-up"></i> ¡Genial!',
                             confirmButtonAriaLabel: 'Thumbs up, great!',
-                            })}
-    var miRuleta = new Winwheel({
-        'numSegments': 10, // Número de segmentos
-        'outerRadius': 270, // Radio externo
-        'innerRadius': 80,  
-        'segments':[ // Datos de los segmentos
-   { 'fillStyle': '#84C430', 'toxt': 'Autoconocimiento', 'number': '1' },
-   { 'fillStyle': '#009FE0', 'toxt': 'Empatía', 'number': '2'},
-   { 'fillStyle': '#9D2098', 'toxt': 'Comunicación asertiva', 'number': '3'},
-   { 'fillStyle': '#5146AF', 'toxt': 'Relaciones interpersonales', 'number': '4'},
-   { 'fillStyle': '#00A585', 'toxt': 'Toma de decisiones', 'number': '5'},
-   { 'fillStyle': '#465A65', 'toxt': 'Manejo de problemas y conflictos', 'number': '6'},
-   { 'fillStyle': '#ED3BCD', 'toxt': 'Pensamiento creativo', 'number': '7'},
-   { 'fillStyle': '#186FB4', 'toxt': 'Pensamiento crítico', 'number': '8'},
-   { 'fillStyle': '#EE3A45', 'toxt': 'Manejo de emociones y sentimientos', 'number': '9'},
-    { 'fillStyle': '#FA7D21', 'toxt': 'Manejo de tensiones y estrés', 'number': '10'},
-            ],
+                            })          
+                 }
+                 var miRuleta = new Winwheel({
+                     'numSegments': 10, // Número de segmentos
+                     'outerRadius': 270, // Radio externo
+                     'innerRadius': 80,  
+                     'segments':[ // Datos de los segmentos
+                         { 'fillStyle': '#84C430', 'toxt': 'Autoconocimiento', 'number': '1' },
+                         { 'fillStyle': '#009FE0', 'toxt': 'Empatía', 'number': '2'},
+                         { 'fillStyle': '#9D2098', 'toxt': 'Comunicación asertiva', 'number': '3'},
+                         { 'fillStyle': '#5146AF', 'toxt': 'Relaciones interpersonales', 'number': '4'},
+                         { 'fillStyle': '#00A585', 'toxt': 'Toma de decisiones', 'number': '5'},
+                         { 'fillStyle': '#465A65', 'toxt': 'Manejo de problemas y conflictos', 'number': '6'},
+                         { 'fillStyle': '#ED3BCD', 'toxt': 'Pensamiento creativo', 'number': '7'},
+                         { 'fillStyle': '#186FB4', 'toxt': 'Pensamiento crítico', 'number': '8'},
+                         { 'fillStyle': '#EE3A45', 'toxt': 'Manejo de emociones y sentimientos', 'number': '9'},
+                         { 'fillStyle': '#FA7D21', 'toxt': 'Manejo de tensiones y estrés', 'number': '10'},
+                     ],
             'animation': { 
                 'type': 'spinToStop', // Giro y alto
                 'duration': 5, // Duración de giro
